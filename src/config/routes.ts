@@ -1,10 +1,10 @@
 import { Router } from "express";
-import { ClasseController } from "../controllers/ClasseController";
+import MedicoController from "../controllers/MedicoController";
 
 const router = Router();
-const classeController = new ClasseController();
+const medicoController = new MedicoController();
 
-router.post("/classe/cadastrar", classeController.cadastrar);
-router.get("/classe/listar", classeController.listar);
+router.post("/medico/cadastrar", medicoController.cadastrar);
+router.get("/medico/listar", medicoController.listar);
 
 export { router };
