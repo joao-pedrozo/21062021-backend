@@ -18,7 +18,7 @@ class MedicoController {
       nome,
       crm,
       especialidade,
-      createdAt: Date.now(),
+      criadoEm: Date.now(),
     });
 
     const savedNewUser = await newUser.save();
